@@ -1,5 +1,6 @@
 console.log("Console statement coming from imported script");
 
+/*
 // Just values
 console.log("Jonas ", "string");
 console.log(8, " number");
@@ -40,3 +41,28 @@ let myFunctionDoesThings = () => {
   console.log("Doing things");
 };
 myFunctionDoesThings();
+
+*/
+
+// Data types
+
+let javascriptIsFun = true;
+console.log(typeof javascriptIsFun, javascriptIsFun);
+console.log(typeof false, 1 === 2);
+console.log(typeof "Jonas", "-> Jonas");
+console.log(typeof 8, "-> 8");
+
+// Dynamic typing
+
+console.log(javascriptIsFun); // true
+javascriptIsFun = "So fun, yeah";
+console.log(javascriptIsFun);
+
+// undefined vs null
+
+let answer;
+console.log(answer); // undefined; empty variable
+
+let question = null;
+console.log(question); // null; value is null
+console.log(typeof question); //object

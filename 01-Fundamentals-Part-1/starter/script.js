@@ -44,6 +44,8 @@ myFunctionDoesThings();
 
 */
 
+/*
+
 // Data types
 
 let javascriptIsFun = true;
@@ -66,3 +68,14 @@ console.log(answer); // undefined; empty variable
 let question = null;
 console.log(question); // null; value is null
 console.log(typeof question); //object
+*/
+
+// Let, Var, Const
+
+let age = 30; // can be mutated
+age = 31;
+
+const birthYear = 1991; // cannot be changed
+
+var job = "programmer"; // can be mutated
+job = "UX designer";

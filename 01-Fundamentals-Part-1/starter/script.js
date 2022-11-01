@@ -195,4 +195,34 @@ switch (day) {
     console.log("It is not Monday, Tuesday or Wednesday");
     break;
 }
+
+
+const expression = 3 + 4;
+const expression3 = true && false;
+
+if (23 > 10) {
+  const string = "23 is bigger than 10";
+} // statement;
+
+// Statements translate to actions, full sentences
+// Template literals and just expressions
+console.log(`I am ${expression} years old.`);
+console.log(`I am ${2022 - 1997} years old.`);
+
+// Conditional statement
+
+const age = 23;
+age >= 18
+  ? console.log("You are an adult")
+  : console.log("You are not old enough");
+
+console.log(
+  `This is a template literal that includes ternary operator. So I am ${age}, which means ${
+    age >= 18 ? "I am an adult" : "I am a baby"
+  }`
+);
+
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 20;
+console.log(tip);
 */

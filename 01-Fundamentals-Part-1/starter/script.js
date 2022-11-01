@@ -79,7 +79,7 @@ const birthYear = 1991; // cannot be changed
 var job = "programmer"; // can be mutated
 job = "UX designer";
 
-*/
+
 
 // Operators
 
@@ -106,9 +106,6 @@ console.log(ageSarah > ageJohn); // false
 // Operator precedence
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
-console.log(typeof "3");
-console.log(typeof Number("3"));
-console.log(typeof +"3");
 
 // Strings
 
@@ -119,3 +116,64 @@ lines");
 console.log(`String with
 multiple
 lines`);
+
+
+// Type conversion - we do it
+
+const year = "1991";
+const yearAsNum = Number(year);
+console.log(year, yearAsNum);
+
+console.log(year + 5); // 19915 - concats
+console.log(Number("Hello")); // NaN
+console.log(yearAsNum + 5); // 1996
+
+console.log(typeof "3"); // string
+console.log(typeof Number("3")); // number
+console.log(typeof +"3"); // number
+
+// Type coercion - JS on its own
+*/
+
+//Falsy values -> 0, "", undefined, null, NaN
+
+console.log(Boolean("Jonas")); // true
+console.log(Boolean({})); // true
+console.log(Boolean(null)); // false
+
+let height;
+if (height) {
+  console.log("Height is defined");
+} else {
+  console.log("Height is undefined"); // this will trigger;
+}
+
+// Equality  operators
+
+console.log(18 === 18); //true both type and value
+console.log({} == {}); //false
+console.log({} === {}); //false
+console.log("18" == 18); // true
+console.log("18" === 18); // false
+
+const inputPrompt = prompt("How ya doing?");
+if (typeof inputPrompt !== "string") {
+  console.log("Invalid input");
+}
+console.log(typeof inputPrompt);
+console.log(inputPrompt);
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+if (hasDriversLicense && hasGoodVision) {
+  console.log("You can drive");
+} else if (hasDriversLicense && !hasGoodVision) {
+  console.log("You can drive but check your vision");
+} else if (hasGoodVision && !hasDriversLicense) {
+  console.log("Good vision will not do you good without a license");
+}
+
+const isTired = true;
+
+const canDrive = hasDriversLicense && hasGoodVision && !isTired;
+console.log(canDrive);

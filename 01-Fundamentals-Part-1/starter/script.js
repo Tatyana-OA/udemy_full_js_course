@@ -133,7 +133,7 @@ console.log(typeof Number("3")); // number
 console.log(typeof +"3"); // number
 
 // Type coercion - JS on its own
-*/
+
 
 //Falsy values -> 0, "", undefined, null, NaN
 
@@ -177,3 +177,22 @@ const isTired = true;
 
 const canDrive = hasDriversLicense && hasGoodVision && !isTired;
 console.log(canDrive);
+
+
+const day = "Monday";
+
+// Switch does strict comparison (===)
+
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday");
+    break;
+  case "Tuesday":
+  case "Wednesday":
+    console.log("Today is Tuesday or Wednesday");
+    break;
+  default:
+    console.log("It is not Monday, Tuesday or Wednesday");
+    break;
+}
+*/
